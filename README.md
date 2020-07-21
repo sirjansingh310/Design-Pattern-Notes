@@ -1,5 +1,7 @@
 # Design Pattern Basics
 
+
+
 # ***Creational Patterns***
 
 ## singleton
@@ -76,8 +78,8 @@ To solve this we can use builder pattern. We have a static inner class called bu
     ComplexObject.Builder.getInstance().setA(a).setB(b).setD(d).setC(c).setF(f).build();
 
   
-  
-
+thread safety is also provided if we use builder pattern with an inner static class, instead of just returing this on every setter call. Ex: new complexobj().setA(a).setB(b); settter returing "this"
+https://www.geeksforgeeks.org/builder-pattern-in-java/
 
 # ***Behavioral Patterns***
 
